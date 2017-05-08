@@ -17,8 +17,8 @@ export default class Router extends Marionette.AppRouter {
 
   get appRoutes() {
     return {
-      '': 'goHome',
       page1: 'goPage1',
+      page2: 'goPage2',
     };
   }
 }

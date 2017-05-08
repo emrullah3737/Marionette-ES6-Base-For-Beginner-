@@ -1,5 +1,6 @@
 import Marionette from 'backbone.marionette';
 import Page1Controller from '../pages/page1/page1_controller';
+import Page2Controller from '../pages/page2/page2_controller';
 
 export default class Controller extends Marionette.Object {
   constructor(...args) {
@@ -13,7 +14,8 @@ export default class Controller extends Marionette.Object {
     new Page1Controller({ mainView: this.obj });
   }
 
-  goHome() {
-    console.log('HOME');
+  goPage2() {
+    console.log('page2');
+    new Page2Controller({ mainView: this.obj });
   }
 }

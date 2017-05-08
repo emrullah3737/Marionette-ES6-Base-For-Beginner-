@@ -14,8 +14,7 @@ app.on('start', () => {
   console.log('App started');
   const options = {
     regions: {
-      homeRegion: '.home',
-      page1Region: '.page1',
+      pagesRegion: '.pages',
     },
   };
   const mainView = new MainLayoutView(options);
@@ -23,6 +22,7 @@ app.on('start', () => {
   new Router({ mainView });
 
   Backbone.history.start(opts);
+  Backbone.history.navigate('page1', { trigger: true });
 });
 
 app.start();

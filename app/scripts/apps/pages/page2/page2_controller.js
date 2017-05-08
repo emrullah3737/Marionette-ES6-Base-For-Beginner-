@@ -1,5 +1,5 @@
 import Marionette from 'backbone.marionette';
-import View from './page1_view';
+import View from './page2_view';
 
 export default class Controller extends Marionette.Object {
 
